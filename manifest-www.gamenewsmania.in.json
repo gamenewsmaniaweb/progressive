@@ -1,0 +1,163 @@
+addEventListener("fetch", event => {
+  const data = {
+       "name": "Web App Name",
+         "short_name": "Web App Name",
+           "description": "Enter Small description related your website",
+             "lang": "en-US",
+               "display": "standalone",
+                 "background_color": "#ffffff",
+                   "start_url": "/?utm_source=homescreen",
+                     "theme_color": "#ffffff", 
+                         "icons": [
+                             {
+      "src": "#",
+      "sizes": "32x32"
+    },
+    {
+      "src": "#",
+      "sizes": "72x72"
+    },
+    {
+      "src": "#",
+      "sizes": "96x96"
+    },
+    {
+      "src": "#",
+      "sizes": "128x128"
+    },
+    {
+      "src": "#",
+      "sizes": "144x144"
+    },
+    {
+      "src": "#",
+      "sizes": "152x152"
+    },
+    {
+      "src": "#",
+      "sizes": "192x192"
+    },
+    {
+      "src": "#",
+      "sizes": "384x384"
+    },
+    {
+      "src": "#",
+      "sizes": "512x512"
+    },
+    {
+      "src": "#",
+      "sizes": "1024x1024"
+                                                                                                                                                            },
+{
+      "purpose": "maskable",
+      "src": "#",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "src": "#",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+                                                                                                                                                               ],
+  "android_package_name": "com.apppackadgename.app",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "id": "com.apppackadgename.app",
+      "platform": "chromeos_play",
+      "url": "https://play.google.com/store/apps/details?id=com.yourapppackedgename.app"
+    }
+  ],
+
+  "launch_handler": {
+    "route_to": "existing-client",
+    "navigate_existing_client": "never"
+  },
+
+  "screenshots": [
+    {
+      "src": "#",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "#",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "#",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "#",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "#",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "#",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "#",
+      "type": "image/png",
+      "sizes": "540x720"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Top Stories",
+      "url": "/search?utm_source=homescreen",
+      "icons": [
+        {
+          "src": "#",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Mobile",
+      "url": "/search/label/Mobile?utm_source=homescreen",
+      "icons": [
+        {
+          "src": "#",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Tools",
+      "url": "/p/tools.html?utm_source=homescreen",
+      "icons": [
+        {
+          "src": "#",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+
+                                                                                                                                                                                                                                                                                                      }
+  const json = JSON.stringify(data, null, 2)
+  return event.respondWith(
+      new Response(json, {
+            headers: {
+                    "content-type": "application/json;charset=UTF-8"
+                          }
+                              })
+                                )
+                                })
